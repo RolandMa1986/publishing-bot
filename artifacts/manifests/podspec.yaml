@@ -36,6 +36,11 @@ containers:
   - 2>&1
   image: DOCKER_IMAGE
   imagePullPolicy: Always
+  env:
+  - name: GIT_COMMITTER_NAME
+    value: "kubesphere"
+  - name: GIT_COMMITTER_EMAIL
+    value: "kubesphere+ks-publishing-bot@gmail.com"
   resources:
     requests:
       cpu: CPU_REQUESTS
