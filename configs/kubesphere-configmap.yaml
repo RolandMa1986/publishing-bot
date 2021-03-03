@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: publisher-config
+data:
+  config: |
+    source-org: kubesphere
+    source-repo: kubesphere
+    target-org: kubesphere
+    rules-file: https://raw.githubusercontent.com/RolandMa1986/kubesphere/staging-rules/staging/publishing/rules.yaml
+    # github-issue: 56876
+    dry-run: false
